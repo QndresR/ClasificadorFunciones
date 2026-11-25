@@ -1,0 +1,110 @@
+* { /* Estilos para todo el contenido de la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+
+body { /* Estilo del fondo y distribucion de las cajas con Displey: Flex */
+    background-color: #F4F1EC;
+    color: #2c2823;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 15px;
+}
+
+header, main, footer { /* Estilo para los contenedores principales */
+    width: 100%;
+    max-width: 650px;
+    background-color: #FFFFFF;
+    border: 1px solid #CFC7B8;
+    padding: 20px;
+}
+
+header { /* Muestra centrado el texto dentro de Header */
+    text-align: center;
+    background-color: #E8E2D8;
+}
+
+header h1 { /* Aumenta el tamaño de la fuente del titulo principal */
+    font-size: 1.3rem;
+}
+
+main, footer, section { /* Distribucion con Flexbox para los contenedores padre */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section p { /* Modificacion de estilo de los parrafos dentro de los section */
+    background-color: #F4F1EC;
+    border: 1px solid #CFC7B8;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button { /* Estilo del boton Generar dentro de la pagina */
+    background-color: #DAD3C6;
+    color: #2c2823;
+    border: 1px solid #CFC7B8;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article { /* Estilos de los contenedores de las clasificaciones (Lineas, Afin, Constante, Sin Funcion)*/
+    background-color: #F4F1EC;
+    border: 1px dashed #CFC7B8;
+    padding: 15px;
+    min-height: 110px;
+}
+
+article h3 { /* Modificacion del titulo de cada clasificacion  */
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+article ul { /* Estilo para mostrar los textos de las propiedades de cada clasificacion */
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+footer section { /* Estilo de fondo y interaccion con el resto de la pagina del Footer */
+    background-color: #F4F1EC;
+    border: 1px solid #CFC7B8;
+    padding: 15px;
+    gap: 10px;
+}
+
+#expresion-funcion { /* Como se muestra la funcion que Grafica Geogebra */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#ggb-applet { /* Estilo del contenedor de la vista para GeoGebra dentro de la pagina */
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer p { /* Estilo de Parrafos dentro del footer */
+    font-size: 0.95rem;
+}
+
+footer a { /* Estilo del link a GeoGebra y como se muestra dentro de la pagina */
+    background-color: #E8E2D8;
+    padding: 2px 6px;
+    border: 1px solid #CFC7B8;
+    border-radius: 4px;
+    color: #2c2823;
+    text-decoration: none;
+}

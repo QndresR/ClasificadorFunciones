@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Funciones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+<body>
+
+    <header> <!-- Titulo principal -->
+        <h1>Clasificador de Funciones</h1>
+    </header>
+
+    <main> <!-- Contenedor del generados y sus funciones -->
+
+        <!-- Seccion para generar los valores b y c -->
+        <section aria-label="Coeficientes">
+            <p>b = [ <span id="valor-b">-</span> ]</p>
+            <p>c = [ <span id="valor-c">-</span> ]</p>
+
+            <!-- Boton para generar los numeros en los valores b y c -->
+            <button type="button" id="btn-generar">[ Generar / Cambiar ]</button>
+        </section>
+
+        <!-- Seccion que muestra las clasificaciones de cada funcion -->
+        <section aria-label="Clasificación de funciones">
+
+            <!-- Clasificacion Lineal -->
+            <article>
+                <h3>LINEAL</h3>
+                <section id="propiedades-lineal"></section>
+            </article>
+
+            <!-- Clasificacion Afin -->
+            <article>
+                <h3>AFÍN</h3>
+                <section id="propiedades-afin"></section>
+            </article>
+
+            <!-- Clasificacion Constante -->
+            <article>
+                <h3>CONSTANTE</h3>
+                <section id="propiedades-constante"></section>
+            </article>
+
+            <!-- Clasificacion Sin Funcion -->
+            <article>
+                <h3>SIN FUNCIÓN</h3>
+                <section id="propiedades-sin-funcion"></section>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de pagina donde se muestra la grafica con GeoGebra-->
+    <footer>
+        <section aria-label="Gráfica en GeoGebra">
+            <p id="expresion-funcion">f(x) = -</p>
+            <section id="ggb-applet"></section>
+        </section>
+
+        <p>
+            <strong>ENLACE:</strong> GeoGebra Clásico
+            (<a href="https://www.geogebra.org/classic" target="_blank" rel="noopener noreferrer">geogebra.org/classic</a>)
+        </p>
+    </footer>
+
+    <!-- Conexion con JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
